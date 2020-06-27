@@ -3,10 +3,14 @@ job('NodeJS-dev-api') {
          numToKeep 5
         }
     scm {
-        git('https://sharmamukesh49@bitbucket.org/browndeckventuresllc/ajna-api.git')
+        git {
+            remote {
+                ('https://sharmamukesh49@bitbucket.org/browndeckventuresllc/ajna-api.git')
         credentialsID('Source-Access')
-        branch('*/CDEV')  
+        branch('*/CDEV') 
             }
+        } 
+    }
     wrappers {
         nodejs('default') // this is the name of the NodeJS installation in 
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
