@@ -4,7 +4,7 @@ job('NodeJS-dev-api') {
         }
     scm {
         git('https://sharmamukesh49@bitbucket.org/browndeckventuresllc/ajna-api.git')
-        credentials('Ajna-source-access')
+        credentials('Source-Access')
         branch('CDEV')  
             }
     wrappers {
