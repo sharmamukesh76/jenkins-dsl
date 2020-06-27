@@ -6,7 +6,7 @@ job('NodeJS-dev-api') {
         git {
             remote {
                 ('https://sharmamukesh49@bitbucket.org/browndeckventuresllc/ajna-api.git')
-        credentialsID('Source-Access')
+        credentials('Source-Access')
         branch('*/CDEV') 
             }
         } 
