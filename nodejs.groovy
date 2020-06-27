@@ -4,8 +4,8 @@ job('NodeJS-dev-api') {
         }
     scm {
         git('https://sharmamukesh49@bitbucket.org/browndeckventuresllc/ajna-api.git')
-        credentials('Source-Access')
-        branch('CDEV')  
+        credentialsid('Source-Access')
+        branch('*/CDEV')  
             }
     wrappers {
         nodejs('default') // this is the name of the NodeJS installation in 
